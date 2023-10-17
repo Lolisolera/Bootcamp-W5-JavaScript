@@ -69,9 +69,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const lastName = lastNameInput.value;
 
         if (firstName && lastName) {
-            fullNameParagraph.textContent = "Your full name is: " + firstName + " " + lastName;
+            fullNameParagraph.innerHTML = "Your full name is: " + firstName + " " + lastName;
         } else {
-            fullNameParagraph.textContent = "Please enter both first name and last name.";
+            fullNameParagraph.innerHTML = "Please enter both first name and last name.";
         }
     });
 });
+
+
