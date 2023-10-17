@@ -1,45 +1,17 @@
-//DOM - Document Object Model
-//Objective
-
-/* Explore the key concept
-How to access HTML elements
-How to manipulate HTML elements
-
-*/
-
-//1- Accessing the HTML elements by ID getElementById (camel casing)
-
-//Get Elements by ID
-/*
-//Get elements by Tag Name
-document.getElementsByTagName('p');
-const paragraphs = document.getElementsByTagName('p')[1];
-console.log(paragraphs);
-
-//Get elements by class name
-const h2 = document.getElementByClassName('headingTwo')
-
-//How to list all elements
 
 
-for (let i = o; i <= h2.length; i++); {
-
-    console.log(h2[i]);
-}
-
-//TASK
+//TASK 1
 /* Create a heading in HTML with id, Three paragraph, a h2, h3 with the same classes.
 Change the text of h1 to 'JavaScript DOM'.
 Also, change the text of h2, h3 to 'Text changed using JS'
-Change the text of all three paragraphs to whatever you want.*/
+Change the text of all three paragraphs to whatever you want.
 
-/*
+
+//ANSWER:
 document.getElementById("firstHeading").innerHTML = "JavaScript DOM";
 
 const h1 = document.getElementById("firstHeading").innerHTML = "JavaScript DOM";
 console.log(h1);
-
-
 
 
 document.getElementsByClassName('subHeading').innerHTML = "Text changed using JS";
@@ -54,26 +26,6 @@ document.getElementsByTagName('p').innerHTML = "Good Bye";
 const p = document.getElementsByTagName('p'[0]).innerHTML = "Good Bye";
 
 console.log(p);
-
-
-
-//Styling HTML Elements 
-
-h1.style.color = "orange";
-h2.style.cssText = "color:orange;background-color:green";
-
-
-//Change colour of list items
-
-const listItems = document.getElementsByTagName('li');
-for (let i = 0; i < listItems.length; i++) {
-    listItems[i].style.color = 'Blue';
-}
-
-console.clear();
-//Create a new element and add it to the document
-const ul = document.querySelector('ul');
-console.log(ul);
 
 */
 
@@ -103,7 +55,7 @@ document.body.appendChild(newDiv);
 
 
 
-//PRACTICE:
+PRACTICE:
 
 document.createElement("div");
 const secondNewDiv = document.createElement("div");
@@ -116,7 +68,7 @@ newP.style.backgroundColor = "purple";
 //// Append the new p element to the second new div element:
 secondNewDiv.appendChild(newP);
 
-// Append the new div element to the document's body (or any other element you want to append it to)
+//Append the new div element to the document's body (or any other element you want to append it to)
 document.body.appendChild(secondNewDiv);
 
 

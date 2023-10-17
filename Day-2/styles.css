@@ -1,0 +1,9 @@
+#hover-div {
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
