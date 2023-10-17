@@ -77,3 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+//TASK 3
+//have a button, two text boxes and a table in html
+
+//when you click on the button it should add the text boxes data to the table.
