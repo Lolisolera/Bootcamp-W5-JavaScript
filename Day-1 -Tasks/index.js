@@ -28,7 +28,7 @@ for (let i = o; i <= h2.length; i++); {
 }
 
 //TASK
-/* Create a heading in HTML with id, Three paragraph, a h2, h3 wiht the same classes.
+/* Create a heading in HTML with id, Three paragraph, a h2, h3 with the same classes.
 Change the text of h1 to 'JavaScript DOM'.
 Also, change the text of h2, h3 to 'Text changed using JS'
 Change the text of all three paragraphs to whatever you want.*/
@@ -71,7 +71,7 @@ for (let i = 0; i < listItems.length; i++) {
 }
 
 console.clear();
-//Create a new elemenr and add it to the document
+//Create a new element and add it to the document
 const ul = document.querySelector('ul');
 console.log(ul);
 
@@ -88,15 +88,12 @@ const newDiv = document.createElement("div");
 // Step 2: Create a new <h1> element
 const newH1 = document.createElement("h1");
 
-
-
 // Step 3: Add text to the <h1>
-newH1.textContent = "This is an H1 heading";
-
+newH1.innerHTML = "I'm creating this heading with JS";
 
 // Step 4: Change font size and background color
-newH1.style.fontSize = "80px"; // Set the font size to 24 pixels
-newDiv.style.backgroundColor = "red"; // Set the background color to light blue
+newH1.style.fontSize = "80px"; // Set the font size to 80 pixels
+newDiv.style.backgroundColor = "red"; // Set the background color to red
 
 // Step 5: Append the <h1> to the <div>
 newDiv.appendChild(newH1);
@@ -106,8 +103,21 @@ document.body.appendChild(newDiv);
 
 
 
+//PRACTICE:
 
+document.createElement("div");
+const secondNewDiv = document.createElement("div");
+document.createElement("p");
+const newP = document.createElement("p");
+newP.innerHTML = "This is my new paragraph creating with JS";
+newP.style.fontsize = "100px";
+newP.style.backgroundColor = "purple";
 
+//// Append the new p element to the second new div element:
+secondNewDiv.appendChild(newP);
+
+// Append the new div element to the document's body (or any other element you want to append it to)
+document.body.appendChild(secondNewDiv);
 
 
 
