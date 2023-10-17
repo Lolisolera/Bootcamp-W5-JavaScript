@@ -5,8 +5,8 @@
 //addeventlistener. Attachs event to html elements.
 
 
-
-//TASK
+/*
+//TASK 1
 //Add a div in the html
 //When you hover on the div, it should change its background colour to red
 //and text to "Go away!"
@@ -50,3 +50,28 @@ div.addEventListener("mouseenter", function () {
 });
 
 */
+
+
+//TASK 2
+
+//Have a p,two text boxes, one for first name and last name.
+//When you click on the buttons it should change the p text to your full name.
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const fullNameParagraph = document.getElementById("fullName");
+    const firstNameInput = document.getElementById("firstName");
+    const lastNameInput = document.getElementById("lastName");
+    const showFullNameButton = document.getElementById("showFullName");
+
+    showFullNameButton.addEventListener("click", function () {
+        const firstName = firstNameInput.value;
+        const lastName = lastNameInput.value;
+
+        if (firstName && lastName) {
+            fullNameParagraph.textContent = "Your full name is: " + firstName + " " + lastName;
+        } else {
+            fullNameParagraph.textContent = "Please enter both first name and last name.";
+        }
+    });
+});
