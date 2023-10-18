@@ -1,10 +1,10 @@
-const button=document.getElementById('btnClick');
-const text=document.getElementById('txtName');
+const button = document.getElementById('btnClick');
+const text = document.getElementById('txtName');
 
 button.addEventListener('click', getValue);
 
-function getValue(){
-    document.getElementById('p1').innerText=text.value;
+function getValue() {
+    document.getElementById('p1').innerText = text.value;
 }
 
 // 'Hello, How are you Zak?'
@@ -19,13 +19,13 @@ when you click on the button it should add the text boxes data to the table.
 */
 
 // 
-const swap=document.getElementById('btnSwap');
+const swap = document.getElementById('btnSwap');
 
 
 swap.addEventListener('click', swapPictures)
-function swapPictures(){
-    const firstPic=document.getElementById('firstPic').src;
-const secondPic=document.getElementById('secondPic').src;
-    document.getElementById('firstPic').src=secondPic;
-    document.getElementById('secondPic').src=firstPic;
+function swapPictures() {
+    const firstPic = document.getElementById('firstPic').src;
+    const secondPic = document.getElementById('secondPic').src;
+    document.getElementById('firstPic').src = secondPic;
+    document.getElementById('secondPic').src = firstPic;
 }

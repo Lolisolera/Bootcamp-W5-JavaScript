@@ -58,6 +58,7 @@ div.addEventListener("mouseenter", function () {
 //When you click on the buttons it should change the p text to your full name.
 
 
+
 document.addEventListener("DOMContentLoaded", function () {
     const fullNameParagraph = document.getElementById("fullName");
     const firstNameInput = document.getElementById("firstName");
@@ -75,6 +76,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
 
 
 //TASK 3
