@@ -29,5 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+/*NOTE:
+The DOMContentLoaded event is one of the most important indicators of how fast your web page loads and how soon your users can interact with it.
+It fires when the browser has parsed the HTML document and built the DOM tree, but before the external resources like images, stylesheets, and scripts are loaded.
+*/
 
 
