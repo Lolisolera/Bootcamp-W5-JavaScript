@@ -84,3 +84,5 @@ document.addEventListener("DOMContentLoaded", function () {
 //have a button, two text boxes and a table in html
 
 //when you click on the button it should add the text boxes data to the table.
+
+//COMPLETED TASK IS LOCATED IN "FORM.HTML" AND "FORMSCRIPT.JS"
