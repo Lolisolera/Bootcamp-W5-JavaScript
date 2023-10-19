@@ -77,7 +77,7 @@ console.log(string1.replace('s', 'm'));//
 //trim() remove space before and after the string
 let value = "         value   \n      value1        ";
 console.log(value.trim());
-console.log(string1)
+console.log(string1);
 let data = "This is string";
 console.log(data.split(' '));
 
