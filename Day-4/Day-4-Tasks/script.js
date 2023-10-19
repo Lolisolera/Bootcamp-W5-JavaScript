@@ -1,11 +1,10 @@
 
-
 //TASK 1:
 //create a funtion will be called 10 times.
 //after 10, time stop calling the method and display a message the 'calling of function is cancelled'.
 
 //SOLUTION:
-
+/*
 let myNum = 0;
 
 function myFunction() {
@@ -22,50 +21,52 @@ function myFunction() {
 
 timer = setInterval(myFunction, 1000);
 
+*/
 
 //TASK 2:
 //have another function and once the first function is called 10 times,
 //stop calling the first function and call the second function 10 time.
-/*
-let functioncall = 0; // Initialize a counter to keep track of the function calls
 
+//SOLUTION:
 
-function firstFunction() {
-    if (fnum < 10) {
-        fnum++;
-        console.log(`Calling First Function - ${fnum}`);
-        // Replace this with the actual code you want to execute for the first function
+let series1 = 0;
+let series2 = 0;
+let timer;
 
-        if (fnum === 10) {
-            console.log("Calling of the first function is cancelled");
+function function1() {
+    if (1 < 10) {
+        series1++;
+        console.log(`Function 1 - number ${series1}`);
+
+        if (series1 === 10) {
+            console.log("Calling of function 1 is cancelled");
             clearInterval(timer);
-            fnum = 0; // Reset the counter
-            timer = setInterval(secondFunction, 1000); // Switch to the second function
+            series1 = 0;
+            timer = setInterval(function2, 1000);
         }
     }
 }
 
+function function2() {
+    if (series2 < 10) {
+        series2++;
+        console.log(`Function 2 - number ${series2}`);
 
-function secondFunction() {
-    if (myNum < 10) {
-        myNum++;
-        console.log(`Calling Second Function - Call number ${myNum}`);
-
-        if (myNum === 10) {
-            console.log("Calling of the second function is cancelled");
+        if (series2 === 10) {
+            console.log("Calling of function 2 is cancelled");
             clearInterval(timer);
         }
     }
 }
 
-timer = setInterval(firstFunction, 1000);
+timer = setInterval(function1, 1000);
 
-
-*/
 
 
 //TASK 3:
 //Find out your birthday
+
+//SOLUTION:
 
 function showMyBirthday() {
     const birthdate = new Date('1971-01-21');
@@ -77,6 +78,8 @@ function showMyBirthday() {
 
 //TASK4
 //Create live watch (the seconds, minutes, hours to be changing). 
+
+//SOLUTION:
 
 function updateWatch() {
     const clock = document.getElementById('watch');
