@@ -7,7 +7,7 @@ Also, change the text of h2, h3 to 'Text changed using JS'
 Change the text of all three paragraphs to whatever you want.
 
 
-//ANSWER:
+//SOLUTION:
 document.getElementById("firstHeading").innerHTML = "JavaScript DOM";
 
 const h1 = document.getElementById("firstHeading").innerHTML = "JavaScript DOM";
@@ -55,7 +55,7 @@ document.body.appendChild(newDiv);
 
 
 
-PRACTICE:
+//PRACTICE:
 
 document.createElement("div");
 const secondNewDiv = document.createElement("div");

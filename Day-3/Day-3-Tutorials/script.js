@@ -49,7 +49,7 @@ console.log(date);
 let string = "This is\\\" a string";
 let string1 = 'Thisis it\'s a string';
 
-let string2 = `This is ${string1} nex string`
+let string2 = `This is ${string1} nex string`;
 
 console.log(string);
 console.log(string1);

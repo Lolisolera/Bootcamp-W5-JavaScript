@@ -1,16 +1,3 @@
-/*
-
-
-localStorage.setItem('name', 'Lola');
-
-
-console.log(localStorage.setItem('name'));
-
-
-localStorage.removeItem('name');
-
-
-localStorage.clear();
 
 /*
 //TASK1:
@@ -31,28 +18,6 @@ function clicksave() {
     console.log(localStorage.getItem("Name"));
 }
 /*
-
-
-//STRING METHOD:
-let string = "This is\\\" a string";
-let string1 = 'This is it\'s a string';
-let string2 = `This is ${string} next string`;
-
-console.log(string);
-console.log(string1);
-
-//SLICE METHDOD;
-//slice(startIndex, endIndex) - endINdex is exclusive
-
-
-
-console.log(string1.slice(1, 5));
-//If we give negative values it will start from end.
-console.log(string1.slice(-5, -1));
-
-
-//Substring is a string that's part of another string, for example
-//"ace" is a substring of "racecar"
 
 
 
@@ -98,21 +63,26 @@ between the values you typed in the text boxes.
 
 //SOLUTION TO TASK 3
 
-document.addEventListener('DOMContentLoaded', function () {
-    const minInput = document.getElementById('min');
-    const maxInput = document.getElementById('max');
-    const generateButton = document.getElementById('button');
 
-    generateButton.addEventListener('click', function () {
-        const min = parseInt(minInput.value);
-        const max = parseInt(maxInput.value);
+const minInput = document.getElementById('min');
+const maxInput = document.getElementById('max');
+const generateButton = document.getElementById('button');
 
-        if (!isNaN(min) && !isNaN(max)) {
-            const randomValue = Math.floor(Math.random() * (max - min + 1)) + min;
-            alert("Random Value: " + randomValue);
-        } else {
-            alert("Please enter valid min and max values.");
-        }
-    });
+generateButton.addEventListener('click', function () {
+    const min = Number(minInput.value);
+    const max = Number(maxInput.value);
+
+    if (!(isNaN(min) || isNaN(max)) && typeof min === 'number' && typeof max === 'number') {
+        const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+        alert("Random Number: " + randomNumber);
+    } else {
+        alert("Please enter valid min and max values.");
+    }
 });
 
+
+//NOTE:
+//isNaN()is a built-in JavaScript function that stands for "Is Not-a-Number."
+//It is used to determine whether a value is a valid number or not. 
+//If a value is not a valid number, isNaN() returns true; otherwise, it returns false.
+//It will only evaluate to true if both min and max are valid numbers.

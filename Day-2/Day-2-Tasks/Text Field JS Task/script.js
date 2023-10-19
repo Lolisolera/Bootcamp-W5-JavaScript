@@ -59,30 +59,21 @@ div.addEventListener("mouseenter", function () {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const fullNameParagraph = document.getElementById("fullName");
-    const firstNameInput = document.getElementById("firstName");
-    const lastNameInput = document.getElementById("lastName");
-    const showFullNameButton = document.getElementById("showFullName");
+const fullNameParagraph = document.getElementById("fullName");
+const firstNameInput = document.getElementById("firstName");
+const lastNameInput = document.getElementById("lastName");
+const showFullNameButton = document.getElementById("showFullName");
 
-    showFullNameButton.addEventListener("click", function () {
-        const firstName = firstNameInput.value;
-        const lastName = lastNameInput.value;
+showFullNameButton.addEventListener("click", function () {
+    const firstName = firstNameInput.value;
+    const lastName = lastNameInput.value;
 
-        if (firstName && lastName) {
-            fullNameParagraph.innerHTML = "Your full name is: " + firstName + " " + lastName;
-        } else {
-            fullNameParagraph.innerHTML = "Please enter both first name and last name.";
-        }
-    });
+    if (firstName && lastName) {
+        fullNameParagraph.innerHTML = "Your full name is: " + firstName + " " + lastName;
+    } else {
+        fullNameParagraph.innerHTML = "Please enter both first name and last name.";
+    }
 });
-
-
-/*NOTE:
-The DOMContentLoaded event is one of the most important indicators of how fast your web page loads and how soon your users can interact with it.
-It fires when the browser has parsed the HTML document and built the DOM tree, but before the external resources like images, stylesheets, and scripts are loaded.
-*/
-
 
 
 
