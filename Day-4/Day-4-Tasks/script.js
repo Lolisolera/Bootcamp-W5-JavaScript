@@ -1,38 +1,9 @@
 
 
-/*
-function greeting() {
-
-    console.log("How are you?");
-    count++;
-    if (count == 0) {
-        clearInterval(interval);
-    }
-}
-
-let timeOut = setTimeout(greeting, 3000);
-clearTimeout(timeOut);
-
-
-let three = setTimeout(greeting, 3000);
-let five = setTimeout(greeting, 5000);
-clearTimeout(three);
-
-
-//SetInterval()
-//call a block of code repeatedly after some tie delay
-
-setInterval(greeting, 3000, "All");
-
-let Interval = setInterval(greeting, 3000, "All");
-
-
-*/
-
 //TASK 1:
 //create a funtion will be called 10 times.
 //after 10, time stop calling the method and display a message the 'calling of function is cancelled'.
-/*
+
 //SOLUTION:
 
 let myNum = 0;
@@ -91,30 +62,7 @@ timer = setInterval(firstFunction, 1000);
 
 
 */
-/*
-//DATE in JS:
-let date = new Date();
-console.log(date);
-let date = new Date(year, moth, day, hour, minues, seconds, millisecontheds);
 
-//the first two we should pass
-
-let date1 = new Date(2023, 10, 19);
-
-console.log(date1);
-
-//months start from zero, so 11 is December
-
-let date2 = new Date().toLocaleString('en-US', { timeZone: 'Asia/Tokyo' });
-
-console.log(date2);
-
-//local date
-let localDate = date.toLocalDateString('en-uk', { month: 'numeric' });
-console.log(localDate);
-console.log(date.getDate());
-
-*/
 
 //TASK 3:
 //Find out your birthday
@@ -122,9 +70,9 @@ console.log(date.getDate());
 function showMyBirthday() {
     const birthdate = new Date('1971-01-21');
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    const formattedDate = birthdate.toLocaleDateString('en-uk', options);
+    const generatedDate = birthdate.toLocaleDateString('en-uk', options);
 
-    alert("My Birthday is on: " + formattedDate);
+    alert("My Birthday is on: " + generatedDate);
 }
 
 //TASK4
