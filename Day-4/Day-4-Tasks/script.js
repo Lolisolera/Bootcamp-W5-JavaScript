@@ -150,3 +150,10 @@ stopButton.addEventListener('click', function () {
     timerElement.textContent = '00:00:00';
 });
 
+/*NOTE:
+seconds.toString().padStart(2, '0'): 
+Converts the seconds variable to a string and ensures it has a minimum width 
+of 2 characters by padding it with '0' on the left. 
+The tie will be displayed as "02" seconds and so on.
+
+*/
