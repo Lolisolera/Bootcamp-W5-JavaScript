@@ -98,3 +98,55 @@ setInterval(updateWatch, 1000);
 // Update the clock immediately upon page load
 updateWatch();
 
+
+
+
+//TASK5
+//Create live watch (the seconds, minutes, hours to be changing)
+//simple timer with start and stop buttons, the start button should start the timer and when you click on the stop button, the timmer should stop and set to 00.
+
+//SOLUTION:
+
+// Get the elements and initialize variables
+const timerElement = document.getElementById('timer');
+const startButton = document.getElementById('startButton');
+const stopButton = document.getElementById('stopButton');
+
+let timerInterval;
+let seconds = 0;
+let minutes = 0;
+let hours = 0;
+
+// Function to update the timer display
+function updateTimer() {
+    seconds++;
+    if (seconds >= 60) {
+        seconds = 0;
+        minutes++;
+        if (minutes >= 60) {
+            minutes = 0;
+            hours++;
+        }
+    }
+
+    const timeString = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    timerElement.textContent = timeString;
+}
+
+// Event listener for the Start button
+startButton.addEventListener('click', function () {
+    if (!timerInterval) {
+        timerInterval = setInterval(updateTimer, 1000);
+    }
+});
+
+// Event listener for the Stop button
+stopButton.addEventListener('click', function () {
+    clearInterval(timerInterval);
+    timerInterval = null;
+    seconds = 0;
+    minutes = 0;
+    hours = 0;
+    timerElement.textContent = '00:00:00';
+});
+
