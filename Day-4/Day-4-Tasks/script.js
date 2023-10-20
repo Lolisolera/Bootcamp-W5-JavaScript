@@ -75,7 +75,7 @@ function showMyBirthday() {
 
     alert("My Birthday is on: " + generatedDate);
 }
-
+/*
 //TASK4
 //Create live watch (the seconds, minutes, hours to be changing). 
 
@@ -98,6 +98,7 @@ setInterval(updateWatch, 1000);
 // Update the clock immediately upon page load
 updateWatch();
 
+*/
 
 
 
